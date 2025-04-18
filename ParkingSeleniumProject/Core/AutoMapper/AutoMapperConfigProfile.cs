@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using ParkingSeleniumProject.Core.Dtos;
+using ParkingSeleniumProject.Core.Entities;
+
 
 namespace ParkingSeleniumProject.Core.AutoMapper
 {
@@ -17,24 +19,24 @@ namespace ParkingSeleniumProject.Core.AutoMapper
             CreateMap<ParkingSpotDTO, ParkingSpot>();
             CreateMap<ParkingSpot, ParkingSpotDTO>();
 
-            CreateMap<PaymentDto, Payment>();
-            CreateMap<Payment, PaymentDto>();
+            //CreateMap<PaymentDto, Payment>();
+            //CreateMap<Payment, PaymentDto>();
 
-            CreateMap<PaymentMethodDto, PaymentMethod>();
-            CreateMap<PaymentMethod, PaymentMethodDto>();
+            //CreateMap<PaymentMethodDto, PaymentMethod>();
+            //CreateMap<PaymentMethod, PaymentMethodDto>();
 
-            CreateMap<InvoiceDto, Invoice>();
-            CreateMap<Invoice, InvoiceDto>();
 
-            CreateMap<ParkingSpaceDto, ParkingSpace>();
-            CreateMap<ParkingSpace, ParkingSpaceDto>();
 
-            CreateMap<ParkingSpaceManagerDto, ParkingSpaceManager>();
-            CreateMap<ParkingSpaceManager, ParkingSpaceManagerDto>();
+            //CreateMap<ParkingSpaceDto, ParkingSpace>();
+            //CreateMap<ParkingSpace, ParkingSpaceDto>();
 
-            CreateMap<AvailabilityMonitorDto, AvailabilityMonitor>();
-            CreateMap<AvailabilityMonitor, AvailabilityMonitorDto>();
+            //CreateMap<ParkingSpaceManagerDto, ParkingSpaceManager>();
+            //CreateMap<ParkingSpaceManager, ParkingSpaceManagerDto>();
+
+            //CreateMap<AvailabilityMonitorDto, AvailabilityMonitor>();
+            //CreateMap<AvailabilityMonitor, AvailabilityMonitorDto>();
 
 
         }
     }
+}
