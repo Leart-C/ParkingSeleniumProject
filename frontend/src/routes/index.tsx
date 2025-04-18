@@ -51,6 +51,9 @@ import EditAvailabilityMonitor from "../pages/availabilityMonitor/EditAvailabili
 import ParkingSpaceManager from "../pages/parkingSpaceManager/ParkingSpaceManager.page";
 import AddParkingSpaceManager from "../pages/parkingSpaceManager/AddParkingSpaceManager.page";
 import EditParkingSpaceManager from "../pages/parkingSpaceManager/EditParkingSpaceManager.page";
+import Invoices from "../pages/invoice/Invoice.page";
+import EditInvoice from "../pages/invoice/EditInvoice.page";
+import AddInvoice from "../pages/invoice/AddInvoice.page";
 
 const GlobalRouter = () => {
   return (
@@ -100,6 +103,21 @@ const GlobalRouter = () => {
             />
             <Route path="edit/:id" element={<EditPayment />} />
             <Route path="add" element={<AddPayment />} />
+          </Route>
+        </Route>
+
+        <Route element={<AuthGuard roles={allAccessRoles} />}>
+          <Route path={PATH_DASHBOARD.invoice}>
+            <Route
+              index
+              element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Invoices />
+                </Suspense>
+              }
+            />
+            <Route path="edit/:id" element={<EditInvoice />} />
+            <Route path="add" element={<AddInvoice />} />
           </Route>
         </Route>
 

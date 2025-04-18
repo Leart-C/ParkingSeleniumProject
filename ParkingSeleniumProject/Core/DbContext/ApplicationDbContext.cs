@@ -20,6 +20,7 @@ namespace ParkingSeleniumProject.Core.DbContext
         public DbSet<AvailabilityMonitor> AvailabilityMonitors { get; set; }
         public DbSet<ParkingSpace> ParkingSpaces { get; set; }
         public DbSet<ParkingSpaceManager> ParkingSpaceManagers { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
 
     }
 }

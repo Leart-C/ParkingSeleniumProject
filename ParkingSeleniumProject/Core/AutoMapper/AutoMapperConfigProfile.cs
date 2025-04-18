@@ -34,6 +34,10 @@ namespace ParkingSeleniumProject.Core.AutoMapper
             CreateMap<AvailabilityMonitorDto, AvailabilityMonitor>();
             CreateMap<AvailabilityMonitor, AvailabilityMonitorDto>();
 
+            CreateMap<InvoiceDto, Invoice>();
+            CreateMap<Invoice, InvoiceDto>();
+
+
 
         }
     }

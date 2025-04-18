@@ -77,6 +77,14 @@ const Sidebar = () => {
         // icon={<CreditCardIcon className="w-5 h-5 text-white mr-2" />}
       />
 
+      <Button
+        label="Invoice"
+        onClick={() => handleClick(PATH_DASHBOARD.invoice)}
+        type="button"
+        variant="secondary"
+        // icon={<CreditCardIcon className="w-5 h-5 text-white mr-2" />}
+      />
+
       <hr />
       <Button
         label="Reservation"
