@@ -17,6 +17,9 @@ namespace ParkingSeleniumProject.Core.DbContext
         public DbSet<ParkingReservationManager> ParkingReservationManagers { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
+        public DbSet<AvailabilityMonitor> AvailabilityMonitors { get; set; }
+        public DbSet<ParkingSpace> ParkingSpaces { get; set; }
+        public DbSet<ParkingSpaceManager> ParkingSpaceManagers { get; set; }
 
     }
 }
