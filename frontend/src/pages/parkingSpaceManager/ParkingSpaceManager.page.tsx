@@ -20,7 +20,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { PATH_DASHBOARD } from "../../routes/paths";
 
-const API_BASE_URL = "https://localhost:7024/api";
+const API_BASE_URL = "https://localhost:7224/api";
 
 // Define the types
 export type ParkingSpaceManager = {

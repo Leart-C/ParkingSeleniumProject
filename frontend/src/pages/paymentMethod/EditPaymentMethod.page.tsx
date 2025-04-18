@@ -32,7 +32,7 @@ const EditPaymentMethod: React.FC = () => {
   const getPaymentMethodById = async () => {
     try {
       const response = await axios.get<PaymentMethod>(
-        `https://localhost:7024/api/PaymentMethod/${id}`
+        `https://localhost:7224/api/PaymentMethod/${id}`
       );
       const { data } = response;
       setPaymentMethod({
@@ -74,7 +74,7 @@ const EditPaymentMethod: React.FC = () => {
         type: paymentMethod.type,
         details: paymentMethod.details,
       };
-      await axios.put(`https://localhost:7024/api/PaymentMethod/${id}`, data);
+      await axios.put(`https://localhost:7224/api/PaymentMethod/${id}`, data);
       Swal.fire({
         icon: "success",
         title: "Success!",

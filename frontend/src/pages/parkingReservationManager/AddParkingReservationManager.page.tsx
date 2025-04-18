@@ -16,7 +16,7 @@ import axios from "axios";
 import { PATH_DASHBOARD } from "../../routes/paths";
 import { ParkingReservationManager } from "./ParkingReservationManger.page";
 
-const BASE_URL = "https://localhost:7024/api/ParkingReservationManager/Create"; // Adjust to your API
+const BASE_URL = "https://localhost:7224/api/ParkingReservationManager/Create"; // Adjust to your API
 
 const AddParkingReservationManager: React.FC = () => {
   const [isAdding, setIsAdding] = useState(false);

@@ -20,7 +20,7 @@ type PaymentMethod = {
   details: string;
 };
 
-const BASE_URL = "https://localhost:7024/api/PaymentMethod/Create"; // Adjust to your API
+const BASE_URL = "https://localhost:7224/api/PaymentMethod/Create"; // Adjust to your API
 
 const AddPaymentMethod: React.FC = () => {
   const [isAdding, setIsAdding] = useState(false);

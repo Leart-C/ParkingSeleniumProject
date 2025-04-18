@@ -110,7 +110,7 @@ export const AddAvailabilityMonitor = () => {
       };
 
       await axios.post(
-        "https://localhost:7024/api/AvailabilityMonitor/Create",
+        "https://localhost:7224/api/AvailabilityMonitor/Create",
         createPayload
       );
 

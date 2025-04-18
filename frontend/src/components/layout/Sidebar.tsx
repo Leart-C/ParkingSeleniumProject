@@ -23,30 +23,7 @@ const Sidebar = () => {
           {user?.firstName} {user?.lastName}
         </h4>
       </div>
-      <Button
-        label="Users Management"
-        onClick={() => handleClick(PATH_DASHBOARD.usersManagement)}
-        type="button"
-        variant="secondary"
-      />
-      <Button
-        label="Send Message"
-        onClick={() => handleClick(PATH_DASHBOARD.sendMessage)}
-        type="button"
-        variant="secondary"
-      />
-      <Button
-        label="Inbox"
-        onClick={() => handleClick(PATH_DASHBOARD.inbox)}
-        type="button"
-        variant="secondary"
-      />
-      <Button
-        label="All Messages"
-        onClick={() => handleClick(PATH_DASHBOARD.allMessages)}
-        type="button"
-        variant="secondary"
-      />
+
       <Button
         label="All Logs"
         onClick={() => handleClick(PATH_DASHBOARD.systemLogs)}
@@ -99,13 +76,7 @@ const Sidebar = () => {
         variant="secondary"
         // icon={<CreditCardIcon className="w-5 h-5 text-white mr-2" />}
       />
-      <Button
-        label="Invoice"
-        onClick={() => handleClick(PATH_DASHBOARD.invoice)}
-        type="button"
-        variant="secondary"
-        // icon={<CreditCardIcon className="w-5 h-5 text-white mr-2" />}
-      />
+
       <hr />
       <Button
         label="Reservation"

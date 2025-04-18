@@ -55,7 +55,7 @@ const EditReservation: React.FC = () => {
   const getReservationById = async () => {
     try {
       const response = await axios.get<Reservation>(
-        `https://localhost:7024/api/Reservation/${id}`
+        `https://localhost:7224/api/Reservation/${id}`
       );
       const formattedStartDate = response.data.startDate
         ? format(new Date(response.data.startDate), "yyyy-MM-dd")
@@ -76,7 +76,7 @@ const EditReservation: React.FC = () => {
   const fetchParkingSpots = async () => {
     try {
       const response = await axios.get<ParkingSpot[]>(
-        "https://localhost:7024/api/ParkingSpot/Get"
+        "https://localhost:7224/api/ParkingSpot/Get"
       );
       setParkingSpots(response.data);
     } catch (error) {
@@ -87,7 +87,7 @@ const EditReservation: React.FC = () => {
   const fetchManagers = async () => {
     try {
       const response = await axios.get<ParkingReservationManager[]>(
-        "https://localhost:7024/api/ParkingReservationManager/Get"
+        "https://localhost:7224/api/ParkingReservationManager/Get"
       );
       setManagers(response.data);
     } catch (error) {
@@ -136,7 +136,7 @@ const EditReservation: React.FC = () => {
       }
 
       await axios.put(
-        `https://localhost:7024/api/Reservation/${id}`,
+        `https://localhost:7224/api/Reservation/${id}`,
         reservation
       );
       navigate(PATH_DASHBOARD.reservations, {

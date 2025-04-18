@@ -36,7 +36,7 @@ const ParkingSpot: React.FC = () => {
   >(null);
   const [openDialog, setOpenDialog] = useState(false);
 
-  const baseUrl = "https://localhost:7024/api/ParkingSpot"; // Replace with your actual URL
+  const baseUrl = "https://localhost:7224/api/ParkingSpot"; // Replace with your actual URL
   const location = useLocation();
   const redirect = useNavigate();
 

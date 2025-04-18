@@ -55,7 +55,7 @@ const EditPayment: React.FC = () => {
   const getPaymentById = async () => {
     try {
       const response = await axios.get<Payment>(
-        `https://localhost:7024/api/Payment/${id}`
+        `https://localhost:7224/api/Payment/${id}`
       );
       console.log("getPaymentById", response.data);
       const formattedDate = response.data.date
@@ -70,7 +70,7 @@ const EditPayment: React.FC = () => {
   const fetchInvoices = async () => {
     try {
       const response = await axios.get<Invoice[]>(
-        "https://localhost:7024/api/Invoice/Get"
+        "https://localhost:7224/api/Invoice/Get"
       );
       setInvoices(response.data);
     } catch (error) {
@@ -81,7 +81,7 @@ const EditPayment: React.FC = () => {
   const fetchPaymentMethods = async () => {
     try {
       const response = await axios.get<PaymentMethod[]>(
-        "https://localhost:7024/api/PaymentMethod/Get"
+        "https://localhost:7224/api/PaymentMethod/Get"
       );
       setPaymentMethods(response.data);
     } catch (error) {
@@ -139,7 +139,7 @@ const EditPayment: React.FC = () => {
         return;
       }
 
-      await axios.put(`https://localhost:7024/api/Payment/${id}`, payment);
+      await axios.put(`https://localhost:7224/api/Payment/${id}`, payment);
       navigate(PATH_DASHBOARD.payments, {
         state: { message: "Payment updated successfully!" },
       });

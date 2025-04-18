@@ -35,8 +35,8 @@ const PaymentMethods: React.FC = () => {
   >(null);
   const [openDialog, setOpenDialog] = useState(false);
 
-  const baseUrl = "https://localhost:7024/api/PaymentMethod/Get"; // replace with your actual URL
-  const deleteURL = "https://localhost:7024/api/PaymentMethod"; // replace with your actual URL
+  const baseUrl = "https://localhost:7224/api/PaymentMethod/Get"; // replace with your actual URL
+  const deleteURL = "https://localhost:7224/api/PaymentMethod"; // replace with your actual URL
 
   const location = useLocation();
   const redirect = useNavigate();

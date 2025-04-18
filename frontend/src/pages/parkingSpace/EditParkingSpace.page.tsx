@@ -41,7 +41,7 @@ const EditParkingSpace: React.FC = () => {
   const getParkingSpaceById = async () => {
     try {
       const response = await axios.get<ParkingSpace>(
-        `https://localhost:7024/api/ParkingSpace/${id}`
+        `https://localhost:7224/api/ParkingSpace/${id}`
       );
       const { data } = response;
       setParkingSpace({
@@ -94,7 +94,7 @@ const EditParkingSpace: React.FC = () => {
         status: parkingSpace.status,
         pricePerHour: parkingSpace.pricePerHour,
       };
-      await axios.put(`https://localhost:7024/api/ParkingSpace/${id}`, data);
+      await axios.put(`https://localhost:7224/api/ParkingSpace/${id}`, data);
       Swal.fire({
         icon: "success",
         title: "Success!",

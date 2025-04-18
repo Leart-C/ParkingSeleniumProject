@@ -22,7 +22,7 @@ import { format } from "date-fns";
 import { PATH_DASHBOARD } from "../../routes/paths";
 import "./reservation.scss";
 
-const API_BASE_URL = "https://localhost:7024/api";
+const API_BASE_URL = "https://localhost:7224/api";
 
 // Define the Reservation type
 export type Reservation = {

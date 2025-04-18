@@ -76,7 +76,7 @@ export const AddReservation = () => {
   const fetchParkingSpots = async () => {
     try {
       const res = await axios.get<ParkingSpot[]>(
-        "https://localhost:7024/api/ParkingSpot/Get"
+        "https://localhost:7224/api/ParkingSpot/Get"
       );
       setParkingSpots(res.data);
     } catch (error) {
@@ -89,7 +89,7 @@ export const AddReservation = () => {
   const fetchManagers = async () => {
     try {
       const res = await axios.get<ParkingReservationManager[]>(
-        "https://localhost:7024/api/ParkingReservationManager/Get"
+        "https://localhost:7224/api/ParkingReservationManager/Get"
       );
       setManagers(res.data);
     } catch (error) {
@@ -145,7 +145,7 @@ export const AddReservation = () => {
       setSuccessMessage(null);
 
       const res = await axios.post<ReservationDetails>(
-        "https://localhost:7024/api/Reservation/Create",
+        "https://localhost:7224/api/Reservation/Create",
         formValues
       );
 

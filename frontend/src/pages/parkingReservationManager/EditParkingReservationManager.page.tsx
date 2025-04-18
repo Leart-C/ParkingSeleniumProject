@@ -33,7 +33,7 @@ const EditParkingReservationManager: React.FC = () => {
   const getManagerById = async () => {
     try {
       const response = await axios.get<ParkingReservationManager>(
-        `https://localhost:7024/api/ParkingReservationManager/${id}`
+        `https://localhost:7224/api/ParkingReservationManager/${id}`
       );
       const { data } = response;
       setManager({
@@ -76,7 +76,7 @@ const EditParkingReservationManager: React.FC = () => {
         managerContact: manager.managerContact,
       };
       await axios.put(
-        `https://localhost:7024/api/ParkingReservationManager/${id}`,
+        `https://localhost:7224/api/ParkingReservationManager/${id}`,
         data
       );
       Swal.fire({

@@ -22,7 +22,7 @@ type ParkingSpot = {
   pricePerHour: number;
 };
 
-const BASE_URL = "https://localhost:7024/api/ParkingSpot/Create"; // Adjust to your API
+const BASE_URL = "https://localhost:7224/api/ParkingSpot/Create"; // Adjust to your API
 
 const AddParkingSpot: React.FC = () => {
   const [isAdding, setIsAdding] = useState(false);

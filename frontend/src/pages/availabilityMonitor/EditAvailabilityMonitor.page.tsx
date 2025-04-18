@@ -51,7 +51,7 @@ const EditAvailabilityMonitor: React.FC = () => {
   const getMonitorById = async () => {
     try {
       const response = await axios.get<AvailabilityMonitor>(
-        `https://localhost:7024/api/AvailabilityMonitor/${id}`
+        `https://localhost:7224/api/AvailabilityMonitor/${id}`
       );
       setMonitor(response.data);
     } catch (error) {
@@ -62,7 +62,7 @@ const EditAvailabilityMonitor: React.FC = () => {
   const fetchParkingSpaces = async () => {
     try {
       const response = await axios.get<ParkingSpace[]>(
-        "https://localhost:7024/api/ParkingSpace/Get"
+        "https://localhost:7224/api/ParkingSpace/Get"
       );
       setParkingSpaces(response.data);
     } catch (error) {
@@ -106,7 +106,7 @@ const EditAvailabilityMonitor: React.FC = () => {
       }
 
       await axios.put(
-        `https://localhost:7024/api/AvailabilityMonitor/${id}`,
+        `https://localhost:7224/api/AvailabilityMonitor/${id}`,
         monitor
       );
       navigate(PATH_DASHBOARD.availabilityMonitor, {

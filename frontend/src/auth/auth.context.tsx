@@ -12,8 +12,7 @@ import {
   IAuthContextState,
   ILoginResponseDto,
 } from "../types/auth.types";
-import { getSession, setSession } from "./auth.utils";
-import axiosInstance from "../utils/axiosInstance";
+
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import {
@@ -24,6 +23,8 @@ import {
   PATH_AFTER_REGISTER,
   REGISTER_URL,
 } from "../utils/globalConfig";
+import { getSession, setSession } from "./auth.utils";
+import axiosInstance from "../utils/axiosInstance";
 
 const authReducer = (state: IAuthContextState, action: IAuthContextAction) => {
   if (action.type === IAuthContextActionTypes.LOGIN) {

@@ -59,7 +59,7 @@ export const AddParkingSpaceManager: React.FC = () => {
   const fetchParkingSpaces = async () => {
     try {
       const res = await axios.get<ParkingSpace[]>(
-        "https://localhost:7024/api/ParkingSpace/Get"
+        "https://localhost:7224/api/ParkingSpace/Get"
       );
       setParkingSpacesList(res.data);
     } catch (error) {
@@ -103,7 +103,7 @@ export const AddParkingSpaceManager: React.FC = () => {
       setSuccessMessage(null);
 
       await axios.post(
-        "https://localhost:7024/api/ParkingSpaceManager/Create",
+        "https://localhost:7224/api/ParkingSpaceManager/Create",
         formValues
       );
 

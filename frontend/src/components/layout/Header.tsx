@@ -1,9 +1,9 @@
-import useAuth from "../../hooks/useAuth.hook";
 import Button from "../general/Button";
 import { AiOutlineHome } from "react-icons/ai";
 import { FiLock, FiUnlock } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import { PATH_DASHBOARD, PATH_PUBLIC } from "../../routes/paths";
+import useAuth from "../../hooks/useAuth.hook";
 
 const Header = () => {
   const { isAuthLoading, isAuthenticated, user, logout } = useAuth();

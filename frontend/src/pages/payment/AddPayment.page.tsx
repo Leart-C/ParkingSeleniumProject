@@ -67,7 +67,7 @@ export const AddPayment = () => {
   const fetchInvoices = async () => {
     try {
       const res = await axios.get<Invoice[]>(
-        "https://localhost:7024/api/Invoice/Get"
+        "https://localhost:7224/api/Invoice/Get"
       );
       setInvoicesList(res.data);
     } catch (error) {
@@ -80,7 +80,7 @@ export const AddPayment = () => {
   const fetchPaymentMethods = async () => {
     try {
       const res = await axios.get<PaymentMethod[]>(
-        "https://localhost:7024/api/PaymentMethod/Get"
+        "https://localhost:7224/api/PaymentMethod/Get"
       );
       setPaymentMethodsList(res.data);
     } catch (error) {
@@ -133,7 +133,7 @@ export const AddPayment = () => {
       setError(null);
       setSuccessMessage(null);
 
-      await axios.post("https://localhost:7024/api/Payment/Create", formValues);
+      await axios.post("https://localhost:7224/api/Payment/Create", formValues);
 
       setSuccessMessage("Payment added successfully!");
       setFormValues(initialValues);

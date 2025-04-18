@@ -1,12 +1,10 @@
 import { Toaster } from "react-hot-toast";
-
-// import GlobalRouter from "./routes";
+import GlobalRouter from "./routes";
 
 const App = () => {
   return (
     <div>
-      {/* <GlobalRouter /> */}
-
+      <GlobalRouter />
       <Toaster />
     </div>
   );

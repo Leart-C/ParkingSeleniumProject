@@ -47,7 +47,7 @@ const EditParkingSpaceManager: React.FC = () => {
   const getParkingSpaceManagerById = async () => {
     try {
       const response = await axios.get<ParkingSpaceManagerDto>(
-        `https://localhost:7024/api/ParkingSpaceManager/${id}`
+        `https://localhost:7224/api/ParkingSpaceManager/${id}`
       );
       setParkingSpaceManager(response.data);
     } catch (error) {
@@ -58,7 +58,7 @@ const EditParkingSpaceManager: React.FC = () => {
   const fetchParkingSpaces = async () => {
     try {
       const response = await axios.get<{ id: number; location: string }[]>(
-        "https://localhost:7024/api/ParkingSpace/Get"
+        "https://localhost:7224/api/ParkingSpace/Get"
       );
       setParkingSpaces(response.data);
     } catch (error) {
@@ -103,7 +103,7 @@ const EditParkingSpaceManager: React.FC = () => {
       };
 
       await axios.put(
-        `https://localhost:7024/api/ParkingSpaceManager/${id}`,
+        `https://localhost:7224/api/ParkingSpaceManager/${id}`,
         updatedManager
       );
       navigate(PATH_DASHBOARD.parkingSpaceManager, {

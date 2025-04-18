@@ -25,7 +25,7 @@ export const PATH_DASHBOARD = {
   reservations: "/dashboard/reservations",
   parkingSpot: "/dashboard/parkingSpots",
   parkingReservationManagers: "/dashboard/parkingReservationManagers",
-  parkingSpace:"/dashboard/parkingSpaces",
-  availabilityMonitor:"/dashboard/availabilityMonitors",
-  parkingSpaceManager:"/dashboard/parkingSpaceManagers",
+  parkingSpace: "/dashboard/parkingSpaces",
+  availabilityMonitor: "/dashboard/availabilityMonitors",
+  parkingSpaceManager: "/dashboard/parkingSpaceManagers",
 };
