@@ -27,14 +27,14 @@ namespace ParkingSeleniumProject.Core.AutoMapper
 
 
 
-            //CreateMap<ParkingSpaceDto, ParkingSpace>();
-            //CreateMap<ParkingSpace, ParkingSpaceDto>();
+            CreateMap<ParkingSpaceDto, ParkingSpace>();
+            CreateMap<ParkingSpace, ParkingSpaceDto>();
 
-            //CreateMap<ParkingSpaceManagerDto, ParkingSpaceManager>();
-            //CreateMap<ParkingSpaceManager, ParkingSpaceManagerDto>();
+            CreateMap<ParkingSpaceManagerDto, ParkingSpaceManager>();
+            CreateMap<ParkingSpaceManager, ParkingSpaceManagerDto>();
 
-            //CreateMap<AvailabilityMonitorDto, AvailabilityMonitor>();
-            //CreateMap<AvailabilityMonitor, AvailabilityMonitorDto>();
+            CreateMap<AvailabilityMonitorDto, AvailabilityMonitor>();
+            CreateMap<AvailabilityMonitor, AvailabilityMonitorDto>();
 
 
         }
