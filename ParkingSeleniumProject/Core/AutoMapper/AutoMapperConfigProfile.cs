@@ -25,8 +25,6 @@ namespace ParkingSeleniumProject.Core.AutoMapper
             CreateMap<PaymentMethodDto, PaymentMethod>();
             CreateMap<PaymentMethod, PaymentMethodDto>();
 
-
-
             CreateMap<ParkingSpaceDto, ParkingSpace>();
             CreateMap<ParkingSpace, ParkingSpaceDto>();
 
